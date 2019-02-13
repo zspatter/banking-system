@@ -5,6 +5,8 @@ A bank system needs to store information about bank `Accounts` and `Customers`. 
 
 The following is a class diagram for the Bank system described above:
 
+![alt text](https://github.com/zspatter/Banking-System/blob/master/class_diagram_bank_system.jpg)
+
 
 
 
