@@ -35,7 +35,6 @@ public class Bank
 //                "Stacy Burnette",
 //                "(765) 451-0786");
 //
-//
 //        // adds checking account to ArrayList in branch
 //        branch.getAccounts().add(commercialCustomer);
 //        // displays account and customer information
@@ -43,7 +42,6 @@ public class Bank
 //        // deposits 100 to the checking account
 //        commercialCustomer.getAccounts().get(0).makeDeposit(100);
 //        System.out.println("=======================================================\n");
-//
 //
 //        // creates a savings account for a personal customer
 //        PersonalCustomer personalCustomer = new PersonalCustomer("Joe Generic",
@@ -53,7 +51,6 @@ public class Bank
 //                        100,
 //                        10),
 //                "(765) 210-1779");
-//
 //
 //        // adds savings account to the ArrayList in branch
 //        branch.getAccounts().add(personalCustomer);
@@ -77,6 +74,7 @@ public class Bank
         System.out.println("=======================================================\n");
         printCustomers(customers);
     }
+
 
     // creates and returns an ArrayList with 1 checking and 1 savings account
     private static ArrayList<Account> createAccounts(int x)
@@ -146,19 +144,20 @@ public class Bank
         double maximumWithdrawalAmount = 0;
         boolean overdraft = false;
 
-        // cast to CheckingAccount to benefit from the overridden
-        // makeWithdrawal() method in the CheckingAccount class
-        CheckingAccount checkingAccount = (CheckingAccount) (customer.getAccounts().get(0));
-
         // if withdrawal will result in overdraft, maximumWithdrawAmount is set
-        // and overdraft is made true
+        // and overdraft flag is set to true
         // this is to ensure the deposit function matches the value of the withdrawal function
-        if (checkingAccount.getBalance() - transferBalance < checkingAccount.getMinimumBalance())
+        if (customer.getAccounts().get(0).getBalance() - transferBalance <
+                ((CheckingAccount)customer.getAccounts().get(0)).getMinimumBalance())
         {
-            maximumWithdrawalAmount = checkingAccount.getBalance() - checkingAccount.getMinimumBalance();
+            maximumWithdrawalAmount = customer.getAccounts().get(0).getBalance() -
+                    ((CheckingAccount)customer.getAccounts().get(0)).getMinimumBalance();
             overdraft = true;
         }
-        checkingAccount.makeWithdrawal(transferBalance);
+
+        // request withdrawal of half the balance of checking account
+        // overdraft limits are implemented in the makeWithdrawal function directly
+        customer.getAccounts().get(0).makeWithdrawal(transferBalance);
 
         // if requested withdrawal amount is too high,
         // transferBalance is replaced with maximumWithdrawalAmount
