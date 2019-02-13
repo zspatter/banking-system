@@ -31,7 +31,7 @@ of $100 and interest rate of 10% and add it to the array list.
     - Make a $100 deposit to the savings account, calculate the interest, then display the
 information
     - Implement other operations of your choice!
-4. (BONUS: 1 points) In your second test code, declare an ArrayList of Customers, where each
+4. **BONUS:** In your second test code, declare an ArrayList of Customers, where each
 customer will have multiple accounts(one saving and one checking account) in the bank
 application.
     - Insert 8 different customers in the Customers ArrayList.
