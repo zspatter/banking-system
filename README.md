@@ -47,3 +47,5 @@ The `creditRating` within the `CommercialCustomer` was assumed to be a credit sc
 
 Bonus:
 The account numbers for the customers are sequential (1-8 for checking, and 10001-10008 for savings).
+
+![alt text](https://github.com/zspatter/Banking-System/blob/master/Lab%203%20UML.png)
