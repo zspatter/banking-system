@@ -20,24 +20,24 @@ simple). The name of this test program is Bank.java, it should make use of the a
 Bank.java should declare an ArrayList to hold all bank accounts. The test program should utilize
 the system capabilities; The following are sample operations that demonstrate the systems
 capabilities:
-  - Create a Checking account for a commercial customer in Kokomo’s branch and add it to
+   - Create a Checking account for a commercial customer in Kokomo’s branch and add it to
 the array list
-  - Create a separate method to display the customer information and account balance. Call
+    - Create a separate method to display the customer information and account balance. Call
 the method on behalf of the customer you created in the previous step.
-  - Deposit a $100 into the account you created in ‘a’, and then display the new info.
-  - Create a Savings account for an individual customer in some branch with initial balance
+    - Deposit a $100 into the account you created in ‘a’, and then display the new info.
+    - Create a Savings account for an individual customer in some branch with initial balance
 of $100 and interest rate of 10% and add it to the array list.
-  - Display the savings account information
-  - Make a $100 deposit to the savings account, calculate the interest, then display the
+    - Display the savings account information
+    - Make a $100 deposit to the savings account, calculate the interest, then display the
 information
-  - Implement other operations of your choice!
+    - Implement other operations of your choice!
 4. (BONUS: 1 points) In your second test code, declare an ArrayList of Customers, where each
 customer will have multiple accounts(one saving and one checking account) in the bank
 application.
-  - Insert 8 different customers in the Customers ArrayList.
-  - Deposit an arbitrary balance for each customer’s checking account.
-  - Transfer half of the checking balance to saving account of each customer.
-  - Print out the bank statement of each customer.
+    - Insert 8 different customers in the Customers ArrayList.
+    - Deposit an arbitrary balance for each customer’s checking account.
+    - Transfer half of the checking balance to saving account of each customer.
+    - Print out the bank statement of each customer.
 
 ## linebreak
 
