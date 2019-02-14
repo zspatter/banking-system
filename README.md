@@ -1,13 +1,13 @@
 # Banking-System
-Consider the following problem specification:
+**Consider the following problem specification:**
 
 A bank system needs to store information about bank `Accounts` and `Customers`. The bank supports two different types of accounts (`Checking` and `Savings`). All bank accounts have `account Number`, `balance`, and `date opened`. Two Operations are defined for all accounts, `makeDeposit()` and `makeWithdrawal()`. `Checking accounts` have additional attribute for `check style` and `minimum balance`. `Saving accounts` have additional attribute for `interest rate` and an operation for `calculateInterest()`. All customers have a `name`, an `address`, and a `phone number`. In addition, a customer can have as many accounts as he needs.
 
-The following is a class diagram for the Bank system described above:
+*The following is a class diagram for the Bank system described above:*
 
 ![alt text](https://github.com/zspatter/Banking-System/blob/master/class_diagram_bank_system.jpg)
 
-The above specifications have been expanded with new requirements as follows: 
+*The above specifications have been expanded with new requirements as follows:*
 
 There are two special types of customers (Personal and Commercial). Commercial customers have additional attributes for credit rating, contact person, and contact person phone. Personal customers have attributes for home phone and work phone. Moreover, expand the model to show that the bank has multiple branches, and each account is serviced by one branch. Naturally, each branch has many accounts.
 
@@ -37,6 +37,7 @@ application.
     - Print out the bank statement of each customer.
     
 ### UML Diagram
+---
 ![alt text](https://github.com/zspatter/Banking-System/blob/master/Lab%203%20UML.png)
 
 ### Assumptions
