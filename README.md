@@ -1,4 +1,17 @@
 # Banking-System
+This project simulates a banking system. There is support for various types of customers - either personal or commercial as well as support for multiple types of accounts - either checking or savings. Furthermore, a bank branch is represented by a collection of accounts.
+
+## What I Learned
+* How to represent a one to many relationship between classes
+* Inheritance and using the `super` keyword in Java
+* Constructor chaining to invoke all superclasses' constructors
+* How to call superclass methods from a subclass
+* How to override superclass methods
+* Polymorphism, dynamic binding, and generic programming
+* How to explicitly cast an object from a superclass to a subclass
+* How to chain `toString()` methods for various classes so a single call displays all of the relevant details of all the objects representing a relationship
+
+## The Problem:
 **Consider the following problem specification:**
 
 A bank system needs to store information about bank `Accounts` and `Customers`. The bank supports two different types of accounts (`Checking` and `Savings`). All bank accounts have `account Number`, `balance`, and `date opened`. Two Operations are defined for all accounts, `makeDeposit()` and `makeWithdrawal()`. `Checking accounts` have additional attribute for `check style` and `minimum balance`. `Saving accounts` have additional attribute for `interest rate` and an operation for `calculateInterest()`. All customers have a `name`, an `address`, and a `phone number`. In addition, a customer can have as many accounts as he needs.
@@ -45,14 +58,3 @@ The `creditRating` within the `CommercialCustomer` was assumed to be a credit sc
 ### Notes:
 * **Task 1** has been commented out of the main method. This is so only **Task 2** executes when run.
 * The account numbers within **Task 2** for the customers are sequential (1-8 for checking, and 10001-10008 for savings).
-
-## What I Learned
-* How to represent a one to many relationship between classes
-* Inheritance and using the `super` keyword in Java
-* Constructor chaining to invoke all superclasses' constructors
-* How to call superclass methods from a subclass
-* How to override superclass methods
-* Polymorphism, dynamic binding, and generic programming
-* How to explicitly cast an object from a superclass to a subclass
-* How to chain `toString()` methods for various classes so a single call displays all of the relevant details of all the objects representing a relationship
-
