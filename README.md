@@ -36,8 +36,7 @@ application.
     - Transfer half of the checking balance to saving account of each customer.
     - Print out the bank statement of each customer.
     
-### UML Diagram
----
+## UML Diagram
 ![alt text](https://github.com/zspatter/Banking-System/blob/master/Lab%203%20UML.png)
 
 ### Assumptions
