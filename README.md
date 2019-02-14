@@ -12,10 +12,7 @@ The above specifications have been expanded with new requirements as follows:
 There are two special types of customers (Personal and Commercial). Commercial customers have additional attributes for credit rating, contact person, and contact person phone. Personal customers have attributes for home phone and work phone. Moreover, expand the model to show that the bank has multiple branches, and each account is serviced by one branch. Naturally, each branch has many accounts.
 
 ## The Task:
-1. Create a new Class Diagram for the complete system.
-2. Implement all classes in your diagram using the Java programming language. Implement the
-relationships as shown in your diagram.
-3. Create a simple test program (no need for using GUI or Exception Handling, just make it very
+1. Create a simple test program (no need for using GUI or Exception Handling, just make it very
 simple). The name of this test program is Bank.java, it should make use of the above classes.
 Bank.java should declare an ArrayList to hold all bank accounts. The test program should utilize
 the system capabilities; The following are sample operations that demonstrate the systems
@@ -31,21 +28,31 @@ of $100 and interest rate of 10% and add it to the array list.
     - Make a $100 deposit to the savings account, calculate the interest, then display the
 information
     - Implement other operations of your choice!
-4. **BONUS:** In your second test code, declare an ArrayList of Customers, where each
+2. **BONUS:** In your second test code, declare an ArrayList of Customers, where each
 customer will have multiple accounts(one saving and one checking account) in the bank
 application.
     - Insert 8 different customers in the Customers ArrayList.
     - Deposit an arbitrary balance for each customer’s checking account.
     - Transfer half of the checking balance to saving account of each customer.
     - Print out the bank statement of each customer.
-
-## linebreak
-
-I have implemented the assignment in full. I have also completed the bonus portion of the assignment. I have commented the implementation for tasks 1-3 out in the main method as I used the same class for task 4 (bonus).
-
-The `creditRating` within the `CommercialCustomer` was assumed to be a credit score rather than a credit line. Furthermore, the `phoneNumber` within the `Account` class was assumed to represent a P`ersonalCustomer` `homePhone` or a `CommercialCustomer` `mainline`
-
-Bonus:
-The account numbers for the customers are sequential (1-8 for checking, and 10001-10008 for savings).
-
+    
+### UML Diagram
 ![alt text](https://github.com/zspatter/Banking-System/blob/master/Lab%203%20UML.png)
+
+### Assumptions
+The `creditRating` within the `CommercialCustomer` was assumed to be a credit score rather than a credit line. Furthermore, the `phoneNumber` within the `Account` class was assumed to represent a `PersonalCustomer` `homePhone` or a `CommercialCustomer` `mainline`
+
+### Notes:
+* **Task 1** has been commented out of the main method. This is so only **Task 2** executes when run.
+* The account numbers within **Task 2** for the customers are sequential (1-8 for checking, and 10001-10008 for savings).
+
+## What I Learned
+* How to represent a one to many relationship between classes
+* Inheritance and using the `super` keyword in Java
+* Constructor chaining to invoke all superclasses' constructors
+* How to call superclass methods from a subclass
+* How to override superclass methods
+* Polymorphism, dynamic binding, and generic programming
+* How to explicitly cast an object from a superclass to a subclass
+* How to chain `toString()` methods for various classes so a single call displays all of the relevant details of all the objects representing a relationship
+
