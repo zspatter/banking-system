@@ -10,25 +10,24 @@ import java.util.ArrayList;
 public class Branch
 {
     private String branchName;
-    private ArrayList<Customer> customers;
+    private ArrayList<Account> accounts;
 
     public Branch()
     {
         this.branchName = "Generic Bank";
-        customers = new ArrayList<>();
+        accounts = new ArrayList<>();
     }
 
     public Branch(String branchName)
     {
         this.branchName = branchName;
-        customers = new ArrayList<>();
-
+        accounts = new ArrayList<>();
     }
 
-    public Branch(String branchName, ArrayList<Customer> customers)
+    public Branch(String branchName, ArrayList<Account> accounts)
     {
         this.branchName = branchName;
-        this.customers = customers;
+        this.accounts = accounts;
     }
 
     public String getBranchName()
@@ -41,13 +40,13 @@ public class Branch
         this.branchName = branchName;
     }
 
-    public ArrayList<Customer> getAccounts()
+    public ArrayList<Account> getAccounts()
     {
-        return customers;
+        return accounts;
     }
 
-    public void setAccounts(ArrayList<Customer> accounts)
+    public void setAccounts(ArrayList<Account> accounts)
     {
-        this.customers = accounts;
+        this.accounts = accounts;
     }
 }

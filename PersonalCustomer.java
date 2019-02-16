@@ -74,7 +74,7 @@ public class PersonalCustomer extends Customer
                 "\n\tName: %1s" +
                 "\n\t%1s" +
                 "\n\tHome phone: %1s" +
-                "\n\tWork phone: %1s",
+                "\n\tWork phone: %1s\n",
                 name,
                 super.address.toString(),
                 homePhone,

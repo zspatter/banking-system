@@ -107,7 +107,7 @@ public class CheckingAccount extends Account
     @Override
     public String toString()
     {
-        return String.format("\n\n\tChecking Account:" +
+        return String.format("\n\tChecking Account:" +
                 "\n\t\t%-17s #%1d" +
                 "\n\t\t%-17s $%3.2f" +
                 "\n\t\t%-17s %1s" +

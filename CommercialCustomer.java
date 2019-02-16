@@ -88,7 +88,7 @@ public class CommercialCustomer extends Customer
                         "\n\t%1s" +
                         "\n\tMainline: %1s" +
                         "\n\tCredit: %1d" +
-                        "\n\tContact: %1s, %1s",
+                        "\n\tContact: %1s, %1s\n",
                 name, super.address.toString(),
                 super.getPhoneNumber(),
                 creditRating,

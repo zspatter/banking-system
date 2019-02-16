@@ -36,7 +36,7 @@ public class Bank
 //                "(765) 451-0786");
 //
 //        // adds checking account to ArrayList in branch
-//        branch.getAccounts().add(commercialCustomer);
+//        branch.getAccounts().add(commercialCustomer.getAccounts().get(0));
 //        // displays account and customer information
 //        System.out.println(commercialCustomer.toString());
 //        // deposits 100 to the checking account
@@ -53,7 +53,7 @@ public class Bank
 //                "(765) 210-1779");
 //
 //        // adds savings account to the ArrayList in branch
-//        branch.getAccounts().add(personalCustomer);
+//        branch.getAccounts().add(personalCustomer.getAccounts().get(0));
 //        // displays account and customer information
 //        System.out.println(personalCustomer.toString());
 //        // deposits 100 to the savings account
