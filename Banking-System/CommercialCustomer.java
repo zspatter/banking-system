@@ -20,14 +20,17 @@ public class CommercialCustomer extends Customer
         this.contactPersonPhone = super.getPhoneNumber();
     }
 
-    public CommercialCustomer(int creditRating, String contactPersonName, String contactPersonPhone)
+    public CommercialCustomer(int creditRating, String contactPersonName,
+                              String contactPersonPhone)
     {
         this.creditRating = creditRating;
         this.contactPersonName = contactPersonName;
         this.contactPersonPhone = contactPersonPhone;
     }
 
-    public CommercialCustomer(String name, Address address, String phoneNumber, Account account, int creditRating, String contactPersonName, String contactPersonPhone)
+    public CommercialCustomer(String name, Address address, String phoneNumber,
+                              Account account, int creditRating,
+                              String contactPersonName, String contactPersonPhone)
     {
         super(name, address, phoneNumber, account);
         this.creditRating = creditRating;
@@ -35,7 +38,9 @@ public class CommercialCustomer extends Customer
         this.contactPersonPhone = contactPersonPhone;
     }
 
-    public CommercialCustomer(String name, Address address, String phoneNumber, ArrayList<Account> accounts, int creditRating, String contactPersonName, String contactPersonPhone)
+    public CommercialCustomer(String name, Address address, String phoneNumber,
+                              ArrayList<Account> accounts, int creditRating,
+                              String contactPersonName, String contactPersonPhone)
     {
         super(name, address, phoneNumber, accounts);
         this.creditRating = creditRating;
@@ -73,9 +78,11 @@ public class CommercialCustomer extends Customer
         this.contactPersonPhone = contactPersonPhone;
     }
 
-    // converts field details to an easily read string
-    // gathers (multiple) account details using StringBuilder
-    // calls address.toString()
+    /**
+     * converts field details to an easily read string
+     * gathers (multiple) account details using StringBuilder
+     * calls address.toString()
+     */
     @Override
     public String toString()
     {
