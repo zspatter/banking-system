@@ -64,10 +64,11 @@ public class Bank
 
         /**
          * Task 4
+         *
+         * creates 8 customers each with a checking and savings account
+         * these accounts each transfer half of their checking balance
+         * to savings (or the highest possible amount that doesn't cause an overdraft)
          */
-        // creates 8 customers each with a checking and savings account
-        // these accounts each transfer half of their checking balance
-        // to savings (or the highest possible amount that doesn't cause an overdraft)
         ArrayList<Customer> customers = createNCustomers(8);
 
         // line break to separate the deposit/withdrawal messages from customer/account details
@@ -93,9 +94,11 @@ public class Bank
         return accounts;
     }
 
-    // this loop creates N customers each with a checking and savings account
-    // these customers each transfer half of the balance of their
-    // checking account to their savings account
+    /**
+     * this loop creates N customers each with a checking and savings account
+     * these customers each transfer half of the balance of their
+     * checking account to their savings account
+     */
     private static ArrayList<Customer> createNCustomers(int n)
     {
         ArrayList<Customer> customers = new ArrayList<>();
@@ -114,7 +117,7 @@ public class Bank
                         "(555) 555-5555",
                         accounts,
                         "(765) 432-1012");
-            // else, the customer will be a commercial customer
+                // else, the customer will be a commercial customer
             else
                 customer = new CommercialCustomer("Generic Co.",
                         new Address(),
@@ -148,10 +151,10 @@ public class Bank
         // and overdraft flag is set to true
         // this is to ensure the deposit function matches the value of the withdrawal function
         if (customer.getAccounts().get(0).getBalance() - transferBalance <
-                ((CheckingAccount)customer.getAccounts().get(0)).getMinimumBalance())
+                ((CheckingAccount) customer.getAccounts().get(0)).getMinimumBalance())
         {
             maximumWithdrawalAmount = customer.getAccounts().get(0).getBalance() -
-                    ((CheckingAccount)customer.getAccounts().get(0)).getMinimumBalance();
+                    ((CheckingAccount) customer.getAccounts().get(0)).getMinimumBalance();
             overdraft = true;
         }
 
@@ -164,7 +167,7 @@ public class Bank
         // this ensures the deposit and withdraw amounts match
         if (overdraft)
             customer.getAccounts().get(1).makeDeposit(maximumWithdrawalAmount);
-        // otherwise, requested transferBalance is used for deposit
+            // otherwise, requested transferBalance is used for deposit
         else
             customer.getAccounts().get(1).makeDeposit(transferBalance);
     }

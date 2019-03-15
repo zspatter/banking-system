@@ -16,10 +16,14 @@ public class Customer
 
     public Customer()
     {
-        this("Joe Generic", new Address(), "(555) 555-5555", new CheckingAccount());
+        this("Joe Generic",
+                new Address(),
+                "(555) 555-5555",
+                new CheckingAccount());
     }
 
-    public Customer(String name, Address address, String phoneNumber, Account account)
+    public Customer(String name, Address address,
+                    String phoneNumber, Account account)
     {
         this.name = name;
         this.address = address;
@@ -28,7 +32,8 @@ public class Customer
         this.accounts.add(account);
     }
 
-    public Customer(String name, Address address, String phoneNumber, ArrayList<Account> accounts)
+    public Customer(String name, Address address,
+                    String phoneNumber, ArrayList<Account> accounts)
     {
         this.name = name;
         this.address = address;

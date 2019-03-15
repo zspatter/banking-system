@@ -25,14 +25,16 @@ public class PersonalCustomer extends Customer
         this.workPhone = workPhone;
     }
 
-    public PersonalCustomer(String name, Address address, String homePhone, Account account, String workPhone)
+    public PersonalCustomer(String name, Address address, String homePhone,
+                            Account account, String workPhone)
     {
         super(name, address, homePhone, account);
         this.homePhone = homePhone;
         this.workPhone = workPhone;
     }
 
-    public PersonalCustomer(String name, Address address, String homePhone, ArrayList<Account> accounts, String workPhone)
+    public PersonalCustomer(String name, Address address, String homePhone,
+                            ArrayList<Account> accounts, String workPhone)
     {
         super(name, address, homePhone, accounts);
         this.homePhone = homePhone;
@@ -59,9 +61,11 @@ public class PersonalCustomer extends Customer
         this.workPhone = workPhone;
     }
 
-    // converts field details to an easily read string
-    // gathers (multiple) account details using StringBuilder
-    // calls address.toString()
+    /**
+     * converts field details to an easily read string
+     * gathers (multiple) account details using StringBuilder
+     * calls address.toString()
+     */
     @Override
     public String toString()
     {
@@ -71,10 +75,10 @@ public class PersonalCustomer extends Customer
 
 
         return String.format("Personal Customer:" +
-                "\n\tName: %1s" +
-                "\n\t%1s" +
-                "\n\tHome phone: %1s" +
-                "\n\tWork phone: %1s\n",
+                        "\n\tName: %1s" +
+                        "\n\t%1s" +
+                        "\n\tHome phone: %1s" +
+                        "\n\tWork phone: %1s\n",
                 name,
                 super.address.toString(),
                 homePhone,

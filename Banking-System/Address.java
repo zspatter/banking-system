@@ -19,7 +19,8 @@ public class Address
         this(123, "Boulevard St.", "Generic Town", "State", "US", 55555);
     }
 
-    public Address(int doorNumber, String street, String city, String stateCode, String countryCode, int postalCode)
+    public Address(int doorNumber, String street, String city,
+                   String stateCode, String countryCode, int postalCode)
     {
         this.doorNumber = doorNumber;
         this.street = street;
@@ -89,14 +90,16 @@ public class Address
         this.postalCode = postalCode;
     }
 
-    // converts field details to an easily read string
-    // (called from PersonalCustomer/CommercialCustomer toString())
+    /**
+     * converts field details to an easily read string
+     * (called from PersonalCustomer/CommercialCustomer toString())
+     */
     @Override
     public String toString()
     {
         return String.format("Address:" +
-                "\n\t\t%1d %1s" +
-                "\n\t\t%1s, %1s, %1s   %1d",
+                        "\n\t\t%1d %1s" +
+                        "\n\t\t%1s, %1s, %1s   %1d",
                 doorNumber, street,
                 city, stateCode, countryCode, postalCode);
     }

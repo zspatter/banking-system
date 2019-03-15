@@ -41,17 +41,19 @@ public class SavingsAccount extends Account
         return getInterestRate() / 100 * super.balance;
     }
 
-    // converts field details to an easily read string
-    // [called from PersonalCustomer/CommercialCustomer toString()]
+    /**
+     * converts field details to an easily read string
+     * [called from PersonalCustomer/CommercialCustomer toString()]
+     */
     @Override
     public String toString()
     {
         return String.format("\n\tSavings Account:" +
-                "\n\t\t%-17s #%1d" +
-                "\n\t\t%-17s $%3.2f" +
-                "\n\t\t%-17s %1s" +
-                "\n\t\t%-17s %3.2f%%" +
-                "\n\t\t%-17s $%3.2f\n",
+                        "\n\t\t%-17s #%1d" +
+                        "\n\t\t%-17s $%,3.2f" +
+                        "\n\t\t%-17s %s" +
+                        "\n\t\t%-17s %3.2f%%" +
+                        "\n\t\t%-17s $%,3.2f\n",
                 "Account number:", accountNumber,
                 "Balance:", balance,
                 "Date opened:", dateOpened,
