@@ -2,14 +2,14 @@
 This project simulates a banking system. There is support for various types of customers - either personal or commercial as well as support for multiple types of accounts - either checking or savings. Furthermore, a bank branch is represented by a collection of accounts.
 
 ## What I Learned
-* How to represent a one to many relationship between classes
-* Inheritance and using the `super` keyword in Java
-* Constructor chaining to invoke all superclasses' constructors
-* How to call superclass methods from a subclass
-* How to override superclass methods
-* Polymorphism, dynamic binding, and generic programming
-* How to explicitly cast an object from a superclass to a subclass
-* How to chain `toString()` methods for various classes so a single call displays all of the relevant details of all the objects representing a relationship
+- How to represent a one to many relationship between classes
+- Inheritance and using the `super` keyword in Java
+- Constructor chaining to invoke all superclasses' constructors
+- How to call superclass methods from a subclass
+- How to override superclass methods
+- Polymorphism, dynamic binding, and generic programming
+- How to explicitly cast an object from a superclass to a subclass
+- How to chain `toString()` methods so a single call displays all of the relevant details/attributes of an entire object
 
 ## The Problem:
 **Consider the following problem specification:**
